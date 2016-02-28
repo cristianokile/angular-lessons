@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular - Aula 01</title>
+	<script src="js/angular.min.js"></script> 
+	<script>
+		angular.module("myApp",[]);
+		angular.module("myApp").controller("hwctrl",function($scope) {
+			$scope.message = "Hello World!";
+		});
+	</script>
+</head>
+<body>
+	<div ng-controller="hwctrl">
+		{{message}}
+	</div>
+</body>
+</html>
